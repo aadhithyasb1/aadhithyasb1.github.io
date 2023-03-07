@@ -1,0 +1,28 @@
+{
+  "name": "aadhithya_webtips_assignments",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Aadhithya_SB@bitbucket.org/aadhithya-s-b/aadhithya_webtips_assignments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/aadhithya-s-b/aadhithya_webtips_assignments/issues"
+  },
+  "homepage": "https://bitbucket.org/aadhithya-s-b/aadhithya_webtips_assignments#readme",
+  "dependencies": {
+    "@aadhithyasb1/time-zone": "^1.0.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "description": ""
+}
