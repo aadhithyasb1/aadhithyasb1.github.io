@@ -1,0 +1,470 @@
+header {
+  height: 230px;
+  margin: 0;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url("./Images/HTML_&_CSS/img/background.svg");
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+}
+.parent {
+  align-items: start;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 0.4fr 1fr 0.5fr 0.6fr 53%;
+  grid-template-rows: 80px 80px;
+  height: 200px;
+  padding-top: 30px;
+
+  grid-template-areas:
+    "city cityname tempC hum cli"
+    "time time tempF prec cli";
+}
+div > h1 {
+  font-size: 1em;
+  width: 100%;
+}
+.parent .cityicon {
+  grid-area: city;
+  margin-left: 27px;
+  position: relative;
+  top: -11px;
+}
+.parent .cityname {
+  grid-area: cityname;
+}
+#data_input {
+  background-color: #808080;
+  color: #d7d2d2;
+  cursor: pointer;
+  font-size: 28px;
+  height: 50px;
+  margin-top: 18px;
+  padding: 4px;
+  width: 210px;
+}
+.parent .tempC {
+  border-right: 2px solid #979191;
+  color: #a6a4a4;
+  grid-area: tempC;
+  height: 60px;
+}
+.tempC h1 {
+  margin: 0px;
+}
+.parent .tempF {
+  border-right: 2px solid #979191;
+  color: #a6a4a4;
+  grid-area: tempF;
+  height: 60px;
+  margin-left: 1px;
+  padding-right: 5px;
+}
+.tempF h1 {
+  margin: 0;
+}
+.parent .precipitation {
+  color: #a6a4a4;
+  grid-area: prec;
+  margin-left: 25px;
+}
+.precipitation h1 {
+  margin: 0;
+}
+.parent .humidity {
+  color: #a6a4a4;
+  grid-area: hum;
+  margin-left: 25px;
+  margin-top: 7px;
+}
+.humidity h1 {
+  margin: 0px;
+}
+.parent .climate {
+  grid-area: cli;
+  margin-top: 11px;
+  transform: scaleX(0.8) translateX(-50px);
+}
+.climate .row1 {
+  color: #dfdbdb;
+  display: flex;
+  font-size: 23px;
+  justify-content: space-between;
+}
+.climate .row2 {
+  color: #dfdbdb;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  padding: 6px;
+}
+.climate .row3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+.climate .row4 {
+  color: #dfdbdb;
+  display: flex;
+  font-size: 23px;
+  justify-content: space-between;
+  padding: 6px;
+}
+.climate img {
+  width: 31px;
+}
+.time {
+  bottom: 17px;
+  font-size: 25px;
+  grid-area: time;
+  margin-left: 153px;
+  margin-top: 4px;
+  position: relative;
+}
+.time h1 {
+  color: #ffe4c4;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.tempC,
+.tempF,
+.precipitation,
+.humidity {
+  font-size: 27px;
+}
+.tempCtextcolor {
+  color: #dfdbdb;
+}
+#idtime {
+  font-size: 33px;
+}
+#idsec,
+#iddate {
+  font-size: 28px;
+}
+#idam {
+  height: 48px;
+  margin-top: 15px;
+}
+#display_invalid {
+  color: #ffffff;
+  margin-bottom: 0px;
+  margin-top: 8px;
+  opacity: 0.4;
+}
+/* CSS for main (T1002) */
+.mainfooter {
+  background-color: black;
+  border-radius: 30px 30px 0px 0px;
+}
+.flex-r{
+  display: flex;;
+  flex: row
+}
+main {
+  height: 460px;
+  position: relative;
+}
+.stickey {
+  background-color: black;
+  border: 1px solid black;
+  color: #979191;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 70px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.stick_top_para {
+  font-size: 29px;
+  margin-right: 325px;
+}
+.stickey .cimg {
+  margin-right: 20px;
+}
+.climateicon1,
+.climateicon2,
+.climateicon3 {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px;
+}
+.displaytop {
+  font-size: 20px;
+  margin-top: 35px;
+}
+input {
+  width: 40px;
+}
+.city {
+  margin-left: 15px;
+}
+.city {
+  background-color: #171717;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  border: 2px #000000 solid;
+  box-sizing: border-box;
+  height: 280px;
+  min-width: 23%;
+  padding-top: 1px;
+  padding: 20px;
+  position: relative;
+  transition: transform 1s;
+}
+.city p,
+.ctemp,
+.cardscityname {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 5px;
+}
+.city h1 {
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.cardscitytop {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 1fr;
+  padding-top: 10px;
+}
+.cardscityname {
+  font-size: 25px;
+  padding-top: 10px;
+}
+.ctemp {
+  font-size: 27px;
+  padding-top: 13px;
+}
+.cards {
+  column-gap: calc(12% / 3);
+  display: flex;
+  overflow-x: scroll;
+  padding-left: 50px;
+  padding-right: 110px;
+  padding-top: 30px;
+  scroll-behavior: smooth;
+}
+.cards::-webkit-scrollbar {
+  display: none;
+}
+.city:hover {
+  transform: scale(1.2);
+}
+.b_arrow_left,
+.b_arrow_right {
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  display: none;
+  font-size: 30px;
+  height: 50px;
+  position: absolute;
+  top: 230px;
+  width: 50px;
+  z-index: 1;
+}
+.b_arrow_left {
+  left: 15px;
+  opacity: 0.5;
+}
+.b_arrow_right {
+  opacity: 0.5;
+  right: 9px;
+}
+.b_arrow_left p,
+.b_arrow_right p {
+  margin-left: 4px;
+  margin-top: 6px;
+}
+main {
+  padding: 0px 65px;
+}
+.bimg {
+  bottom: 0;
+  max-width: 150px;
+  position: absolute;
+  right: 0;
+}
+/* CSS for footer (T1003) */
+footer {
+  height: 720px;
+}
+.foottop {
+  color: #979191;
+  display: flex;
+  font-size: 30px;
+  height: 100px;
+  justify-content: flex-end;
+  padding: 0px 60px;
+}
+.foottop img {
+  cursor: pointer;
+  height: 23px;
+  padding-left: 15px;
+  padding-right: 23px;
+  padding-top: 33px;
+}
+.ftopcontinent {
+  margin-right: 150px;
+}
+.fcardcity {
+  background-color: #171717;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 40px 60px;
+  height: 100px;
+  margin-right: 2px;
+}
+.fcontname {
+  color: #ffff00a6;
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: -9px;
+}
+.fcityname,
+.fcityhumidity {
+  color: #e1dfdf;
+  font-size: 25px;
+  margin-left: 15px;
+}
+.fcityname {
+  margin-top: 20px;
+}
+.fcitytemp {
+  color: #ffffff;
+  font-size: 27px;
+  margin-left: 18px;
+  margin-top: -12px;
+}
+.fcardcont {
+  column-gap: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px 100px;
+  row-gap: 8%;
+}
+.fcardcity:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+.temparrow {
+  height: 30px;
+  width: 30px;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    height: 300px;
+  }
+  .parent {
+    grid-template-columns: 0.6fr 0.5fr 0.5fr 0.5fr 0.5fr 1.3fr;
+    grid-template-rows: 100px 100px;
+    height: 250px;
+
+    grid-template-areas:
+      "city cityname tempC hum tempF prec"
+      "time time cli cli cli cli";
+  }
+  .parent .city {
+    grid-area: city;
+  }
+  .parent .cityname {
+    grid-area: cityname;
+  }
+  select {
+    font-size: 18px;
+  }
+  .humidity,
+  .tempC,
+  .tempF,
+  .precipitation {
+    font-size: 22px;
+    padding-right: 3px;
+  }
+  .parent .humidity {
+    border-right: 2px solid #979191;
+    grid-area: hum;
+  }
+  .parent .tempC {
+    grid-area: tempC;
+  }
+  .parent .tempF {
+    grid-area: tempF;
+    margin-top: 6px;
+  }
+  .parent .precipitation {
+    grid-area: prec;
+    margin-top: 6px;
+  }
+  .parent .time {
+    grid-area: time;
+    margin-left: 140px;
+    margin-top: 30px;
+  }
+  .parent .climate {
+    grid-area: cli;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .stick_top_para {
+    font-size: 25px;
+    margin-right: 130px;
+  }
+  .cards > div {
+    min-width: 40%;
+  }
+}
+@media screen and (max-width: 1520px) {
+  .fcardcont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 7%;
+  }
+  footer {
+    height: 950px;
+  }
+  .foottop {
+    font-size: 25px;
+  }
+  .ftopcontinent {
+    margin-right: 69px;
+  }
+  .fcardcity {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .fcardcity {
+    font-size: 15px;
+    width: 361px;
+  }
+  .stick_top_para {
+    font-size: 25px;
+    margin-right: 100px;
+    margin-top: 35px;
+  }
+  .mainfooter {
+    height: 1430px;
+    width: 995px;
+  }
+  .parent {
+    grid-template-columns: 0.6fr 0.7fr 0.7fr 0.7fr 0.7fr 1fr;
+    grid-template-rows: 100px 100px;
+    height: 250px;
+
+    grid-template-areas:
+      "city cityname tempC hum tempF prec"
+      "time time cli cli cli cli";
+  }
+  .climate {
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 640px;
+  }
+}
